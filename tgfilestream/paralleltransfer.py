@@ -175,7 +175,7 @@ class ParallelTransferrer:
                         yield result.bytes
                     log.debug(f"Part {part}/{last_part} (total {part_count}) downloaded")
                     part += 1
-                log.debug("Parallel download finished")
+                log.debug("Paralel indirme tamamlandı")
         except (GeneratorExit, StopAsyncIteration, asyncio.CancelledError):
             log.debug("Parallel download interrupted")
             raise
